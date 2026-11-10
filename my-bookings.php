@@ -137,7 +137,7 @@ $bookings = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <p><b>From:</b> <?php echo htmlspecialchars($booking['from_date']); ?> <b>To:</b> <?php echo htmlspecialchars($booking['to_date']); ?></p>
                                 <p><b>Message:</b> <?php echo htmlspecialchars($booking['message']); ?></p>
                             </div>
-                            <div class="status" style="border: 2px solid <?php echo ($booking['status'] == 'Canceled') ? 'red' : 'green'; ?>; color: <?php echo ($booking['status'] == 'Canceled') ? 'red' : 'green'; ?>;">
+                            <div class="status" style="border: 2px solid <?php echo ($booking['status'] == 'Cancelled') ? 'red' : 'green'; ?>; color: <?php echo ($booking['status'] == 'Cancelled') ? 'red' : 'green'; ?>;">
                                 <?php echo htmlspecialchars($booking['status']); ?>
                             </div>
                         </div>

@@ -74,7 +74,7 @@ try {
                                 echo "<td>" . htmlspecialchars($row['vehicle']) . "</td>";
                                 echo "<td>" . htmlspecialchars($row['from_date']) . "</td>";
                                 echo "<td>" . htmlspecialchars($row['to_date']) . "</td>";
-                                echo "<td style='color: green; font-weight: bold;'>" . htmlspecialchars($row['status']) . "</td>";
+                                echo "<td style='color: red; font-weight: bold;'>" . htmlspecialchars($row['status']) . "</td>";
                                 echo "<td>" . htmlspecialchars($row['posting_date']) . "</td>";
                                 echo "</tr>";
                             }

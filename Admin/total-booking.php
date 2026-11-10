@@ -79,7 +79,7 @@ try {
                             foreach ($bookings as $row) {
                                 // Fetch status from the database and make it bold & red
                                 $status_text = ucfirst($row['status']); // Capitalize first letter
-                                $status_link = "<a href='booking-details.php?id={$row['booking_id']}' style='color: red; font-weight: bold; text-decoration: none;' onmouseover='this.style.textDecoration=\"underline\"' onmouseout='this.style.textDecoration=\"none\"'>{$status_text}</a>";
+                                $status_link = "<a href='booking-details.php?id={$row['booking_id']}' style='color: crimson; font-weight: bold; text-decoration: none;' onmouseover='this.style.textDecoration=\"underline\"' onmouseout='this.style.textDecoration=\"none\"'>{$status_text}</a>";
                                 echo "<tr>
                                         <td>{$count}</td>
                                         <td>{$row['user_name']}</td>
